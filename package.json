@@ -1,7 +1,6 @@
 {
   "name": "vue",
-  "version": "1.0.0",
-  "description": "vue template",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -24,7 +23,6 @@
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/eslint-config-typescript": "^13.0.0",
-    "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.56.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-vue": "^9.27.0",

@@ -1,6 +1,6 @@
 import { fileURLToPath } from "node:url";
 
-import createVuePlugin from "@vitejs/plugin-vue";
+import vue from "@vitejs/plugin-vue";
 import { execSync } from "child_process";
 import fs from "fs";
 import AutoImport from "unplugin-auto-import/vite";
@@ -40,7 +40,7 @@ export default defineConfig({
     }
   },
   plugins: [
-    createVuePlugin(),
+    vue(),
     AutoImport({
       imports: ["pinia", "vue", "vue-router"],
       eslintrc: {

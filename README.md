@@ -1,9 +1,11 @@
 # Vue3 Template
 
 ## Introduction
+
 This is a project template based on **Vue3**, utilizing **Vue3**, **Vue Router 4**, and **Pinia** as the core tech stack, and **Vite** as the build tool. The project also integrates **ESLint** and **Prettier** for code formatting and quality checks, with **TypeScript** support. The package manager used is **pnpm**.
 
 ## Features
+
 - **Vue3**: For building user interfaces.
 - **Vue Router 4**: For managing application routes.
 - **Pinia**: As the state management library.
@@ -15,26 +17,31 @@ This is a project template based on **Vue3**, utilizing **Vue3**, **Vue Router 4
 ## Usage
 
 ### Install Dependencies
+
 ```bash
 pnpm install
 ```
 
 ### Development
+
 ```bash
 pnpm start
 ```
 
 ### Preview Build
+
 ```bash
 pnpm preview
 ```
 
 ### Production Build
+
 ```bash
 pnpm build
 ```
 
 ### Code Linting and Formatting
+
 ```bash
 pnpm lint
 ```
