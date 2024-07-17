@@ -35,17 +35,7 @@ export default defineConfig({
       output: {
         chunkFileNames: "js/[name]-[hash].js",
         entryFileNames: "js/[name]-[hash].js",
-        assetFileNames: "[ext]/[name]-[hash].[ext]",
-        manualChunks(id) {
-          if (id.includes("node_modules")) {
-            return (
-              id
-                .toString()
-                .match(/\/node_modules\/(?!.pnpm)(?<moduleName>[^/]*)\//)
-                ?.groups?.moduleName ?? "vender"
-            );
-          }
-        }
+        assetFileNames: "[ext]/[name]-[hash].[ext]"
       }
     }
   },
