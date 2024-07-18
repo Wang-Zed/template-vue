@@ -24,9 +24,6 @@
     </div>
   </div>
 </template>
-<script lang="ts" setup>
-import HelloWorld from "./components/HelloWorld/index.vue";
-</script>
 <style lang="less">
 @import "@/styles/index.less";
 

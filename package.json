@@ -19,6 +19,8 @@
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@types/node": "^20.14.10",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/eslint-config-prettier": "^9.0.0",
@@ -32,8 +34,17 @@
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.5.3",
     "unplugin-auto-import": "^0.18.0",
+    "unplugin-vue-components": "^0.27.3",
     "vite": "^5.3.3",
     "vue-tsc": "^2.0.26"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "prettier": {
+    "trailingComma": "none"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue}": [
@@ -42,6 +53,7 @@
     ]
   },
   "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "npx lint-staged",
+    "commit-msg": "npx --no -- commitlint --edit $1"
   }
 }

@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# lock file
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
 # Editor directories and files
 .DS_Store
 *.suo
@@ -20,4 +25,5 @@ dist-ssr
 *.sln
 *.sw?
 
-auto-imports.d.ts
+/auto-imports.d.ts
+/components.d.ts

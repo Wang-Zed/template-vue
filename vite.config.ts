@@ -4,6 +4,7 @@ import vue from "@vitejs/plugin-vue";
 import { execSync } from "child_process";
 import fs from "fs";
 import AutoImport from "unplugin-auto-import/vite";
+import Components from "unplugin-vue-components/vite";
 import { defineConfig } from "vite";
 
 // 获取当前分支 commitId
@@ -28,7 +29,6 @@ const buildTime = new Intl.DateTimeFormat("zh-CN", {
 }).format(new Date());
 
 export default defineConfig({
-  base: "./",
   build: {
     outDir: "dist",
     rollupOptions: {
@@ -46,6 +46,10 @@ export default defineConfig({
       eslintrc: {
         enabled: true
       }
+    }),
+    Components({
+      dirs: ["src/components"],
+      include: [/\.vue$/, /\.tsx?$/, /\.vue\?vue/]
     })
   ],
   resolve: {
